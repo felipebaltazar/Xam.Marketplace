@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/content_cart">
+	<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+		android:layout_margin="@dimen/default_margin"
+		app:cardElevation="10dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal">\
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:weightSum="1"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+			<ImageView 
+				android:id="@+id/cartProductPhoto"
+				android:layout_margin="8dp"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight=".25">
+			</ImageView>
+			<LinearLayout
+				android:padding="@dimen/default_padding"
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight=".36">
+				<TextView
+					android:id="@+id/cartProductName"
+					android:textColor="@color/textColor"
+					android:textSize="@dimen/font_small"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight=".5"
+					android:maxLines="2"
+					android:layout_gravity="top"
+					tools:text="My product">
+					</TextView>
+				
+				<include layout="@layout/discount_tag" />
+				<TextView
+						android:id="@+id/cartQuantityTextview"
+						android:textColor="@color/colorAccentLight"
+						android:textSize="@dimen/font_small"
+						android:paddingHorizontal="5dp"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight=".5"
+						android:gravity="bottom|start"
+						tools:text ="2 UN">
+						</TextView>
+			</LinearLayout>
+				<TextView
+					android:id="@+id/cartProductPrice"
+					android:textColor="@color/textColor"
+					android:textSize="@dimen/font_medium"
+					android:maxLines="1"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:layout_weight=".37"
+					tools:text="R$ 180,00" >
+					</TextView>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+</LinearLayout>

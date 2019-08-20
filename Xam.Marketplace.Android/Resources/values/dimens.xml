@@ -1,0 +1,11 @@
+<resources>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="default_padding">10dp</dimen>
+  <dimen name="default_margin">16dp</dimen>
+  <dimen name="action_button_padding_vertical">10dp</dimen>
+  <dimen name="action_button_padding_horizontal">30dp</dimen>
+  <dimen name="quantity_control_height">35dp</dimen>
+  <dimen name="font_big">25dp</dimen>
+  <dimen name="font_medium">20dp</dimen>
+  <dimen name="font_small">15dp</dimen>
+</resources>

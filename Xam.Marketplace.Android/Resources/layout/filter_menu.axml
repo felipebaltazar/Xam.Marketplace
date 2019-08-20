@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/filterMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#CC000000"
+	android:visibility="gone"
+	android:clickable="true"
+	android:paddingTop="?attr/actionBarSize"
+    tools:showIn="@layout/activity_main"
+	tools:visibility="visible">
+	<LinearLayout
+		android:id="@+id/filterMenuList"
+		android:layout_gravity="right"
+		android:orientation="vertical"
+		android:layout_width="316dp"
+		android:layout_height="match_parent"
+		android:padding="@dimen/default_padding"
+		android:background="@android:color/white">
+	</LinearLayout>
+</LinearLayout>

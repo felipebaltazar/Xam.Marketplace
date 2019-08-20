@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+	android:divider="@drawable/listDivider"
+	android:padding="@dimen/default_padding"
+	android:showDividers="middle"
+	android:weightSum="1">
+	<TextView
+		android:id="@+id/totalQuantityView"
+		android:textColor="@color/colorAccentLight"
+		android:textSize="@dimen/font_small"
+		android:layout_width="match_parent"
+		android:gravity="right"
+		android:layout_height="0dp"
+		android:layout_weight=".5"
+		tools:text="23 UN">
+	</TextView>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight=".5"
+		android:weightSum="1">
+		<TextView
+			android:textColor="@color/colorAccentLight"
+			android:textSize="@dimen/font_medium"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight=".5"
+			android:gravity="left"
+			android:text="Total">
+		</TextView>
+		<TextView
+			android:id="@+id/totalValueView"
+			android:textColor="@color/textColor"
+			android:textSize="@dimen/font_medium"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight=".5"
+			android:gravity="right"
+			tools:text="R$ 2.000,00">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>
